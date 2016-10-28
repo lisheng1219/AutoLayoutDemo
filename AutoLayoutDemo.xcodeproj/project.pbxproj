@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1A6B69C91DB9E50600AF79E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B69C81DB9E50600AF79E7 /* AppDelegate.swift */; };
-		1A6B69CB1DB9E50600AF79E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B69CA1DB9E50600AF79E7 /* ViewController.swift */; };
 		1A6B69CE1DB9E50600AF79E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6B69CC1DB9E50600AF79E7 /* Main.storyboard */; };
 		1A6B69D01DB9E50600AF79E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6B69CF1DB9E50600AF79E7 /* Assets.xcassets */; };
 		1A6B69D31DB9E50600AF79E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6B69D11DB9E50600AF79E7 /* LaunchScreen.storyboard */; };
 		1A6B69DE1DB9E50600AF79E7 /* AutoLayoutDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B69DD1DB9E50600AF79E7 /* AutoLayoutDemoTests.swift */; };
 		1A6B69E91DB9E50600AF79E7 /* AutoLayoutDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A6B69E81DB9E50600AF79E7 /* AutoLayoutDemoUITests.swift */; };
+		1A87AC481DC1E24300DB5519 /* AutoLayoutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A87AC471DC1E24300DB5519 /* AutoLayoutTableViewController.swift */; };
+		1A87AC4A1DC1EBA700DB5519 /* AutoLayoutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A87AC491DC1EBA700DB5519 /* AutoLayoutTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		1A6B69C51DB9E50600AF79E7 /* AutoLayoutDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoLayoutDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6B69C81DB9E50600AF79E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A6B69CA1DB9E50600AF79E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A6B69CD1DB9E50600AF79E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A6B69CF1DB9E50600AF79E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A6B69D21DB9E50600AF79E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		1A6B69E41DB9E50600AF79E7 /* AutoLayoutDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoLayoutDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6B69E81DB9E50600AF79E7 /* AutoLayoutDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoLayoutDemoUITests.swift; sourceTree = "<group>"; };
 		1A6B69EA1DB9E50600AF79E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A87AC471DC1E24300DB5519 /* AutoLayoutTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutTableViewController.swift; sourceTree = "<group>"; };
+		1A87AC491DC1EBA700DB5519 /* AutoLayoutTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				1A6B69C81DB9E50600AF79E7 /* AppDelegate.swift */,
-				1A6B69CA1DB9E50600AF79E7 /* ViewController.swift */,
+				1A87AC471DC1E24300DB5519 /* AutoLayoutTableViewController.swift */,
+				1A87AC491DC1EBA700DB5519 /* AutoLayoutTableViewCell.swift */,
 				1A6B69CC1DB9E50600AF79E7 /* Main.storyboard */,
 				1A6B69CF1DB9E50600AF79E7 /* Assets.xcassets */,
 				1A6B69D11DB9E50600AF79E7 /* LaunchScreen.storyboard */,
@@ -256,7 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A6B69CB1DB9E50600AF79E7 /* ViewController.swift in Sources */,
+				1A87AC481DC1E24300DB5519 /* AutoLayoutTableViewController.swift in Sources */,
+				1A87AC4A1DC1EBA700DB5519 /* AutoLayoutTableViewCell.swift in Sources */,
 				1A6B69C91DB9E50600AF79E7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +486,7 @@
 				1A6B69EF1DB9E50600AF79E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A6B69F01DB9E50600AF79E7 /* Build configuration list for PBXNativeTarget "AutoLayoutDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				1A6B69F21DB9E50600AF79E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A6B69F31DB9E50600AF79E7 /* Build configuration list for PBXNativeTarget "AutoLayoutDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				1A6B69F51DB9E50600AF79E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
